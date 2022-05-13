@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scene object/Scenes/ui_food.unity
+- path: Assets/Scene object/Scenes/0-02.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
