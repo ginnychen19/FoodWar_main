@@ -601,9 +601,6 @@ namespace Photon.Pun
         /// <param name="parameters">The parameters that the RPC method has (must fit this call!).</param>
         public void RPC(string methodName, RpcTarget target, params object[] parameters)
         {
-            
-            RPCManager.Instance.rpcTimes++;
-            RPCManager.Instance.AddRPC(methodName);
             PhotonNetwork.RPC(this, methodName, target, false, parameters);
         }
 

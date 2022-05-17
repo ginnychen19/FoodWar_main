@@ -35,6 +35,15 @@ public class StartGameLobby : Windows<StartGameLobby>
         StartCoroutine(LoadingProgress());
     }
 
+    public void LoadPokedexScene()
+    {
+        async = SceneManager.LoadSceneAsync("UI");
+        async.allowSceneActivation = false;
+        萬讀.ins.isOpen = true;
+        萬讀.ins.info = "讀取中...";
+        StartCoroutine(LoadingProgress());
+    }
+
     private IEnumerator LoadingProgress()
     {
         while (progress < 0.99f)
